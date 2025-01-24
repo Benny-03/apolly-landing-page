@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container" id="page1">
+            <div class="row" id="primaRiga">
+                <div class="col">
+                    <img src="images/mail-fill.png">
+                    <a class="text-white" href="mailto:info@youremail.com" style="padding-left: 10px;">Info@youremail.com</a>
+                    <img src="images/phone-fill.png" style="padding-left: 50px;">
+                    <a class="text-white" href="tel:(480) 555-0103" style="padding-left: 10px;">(480) 555-0103</a>
+                </div>
+                <div class="col social">
+                    <a href="#"><img src="images/facebook-fill.png" style="padding-right: 10px;"></a>
+                    <a href="#"><img src="images/instagram-fill.png" style="padding-right: 10px;"></a>
+                    <a href="#"><img src="images/twitter-fill.png" style="padding-right: 10px;"></a>
+                    <a href="#"><img src="images/youtube-fill.png" ></a>
+                </div>
+            </div>
+            <br><br>
+            
+
+            <div class="rowMenu">
+                <button id="button-menu" onclick="openMenu()">
+                    <img src="images/menu-line.png">
+                </button>
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="features.html">FEATURES</a>
+                <div class="logo">
+                    <img src="./images/Logo.png" >
+                </div>
+                <a href="screenshot.html">SCREENSHOT</a>
+                <a href="blog.html">BLOG</a>
+                <a href="download.html" id="download">
+                    <span>DOWNLOAD</span>
+                </a>
+            </div>
+
+            <nav class="menu closed">
+                <button onclick="closeMenu()">
+                    <img src="images/close-fill.png" style="background-color:rgba(89, 86, 233, 1); width: 35px; height: 35px;">
+                </button>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="features.html">FEATURES</a></li>
+                    <li><a href="screenshot.html">SCREENSHOT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="row rowHero">
+                <div class="col" style="position: relative; width: 100%;">
+                    <div class="card">
+                        <h1>A GREAT APP MAKES YOUR LIFE BETTER</h1>
+                        <h7>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h7>
+                        <h5>DOWNLOAD APP NOW</h5>
+                        <img src="images/PlayStore.png">
+                        <img src="images/AppStore.png" style="display: inline; padding-bottom: 2px; padding-left: 10px;">
+                    </div>
+                </div>
+                <div class="col" id="cell" >
+                    <img src="images/mobile-app.png" style="z-index: 1;position: relative;">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="page2">
+            <div class="rowAbout">
+                <h4>ABOUT OUR APP</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="rowAbout1">
+                <div class="col" id="col1" style="position: relative;">
+                    <img src="images/android-smartphone.png" id="im1">
+                    <img src="images/Ellipse.png" id="Ellipse">
+                </div>
+                <div class="col" id="col2" style="display: flex; flex-direction: column;gap: 40px;width: 100%;align-items: flex-end;">
+                    <div class="rectangle">
+                        <div style="display: flex; align-items: center; margin-top: -10px;">
+                            <img src="images/checkbox-circle-fill.png" style="width: 24px; height: 24px; padding-left: 18px;">
+                            <h6 >CREATIVE DESIGN</h6>
+                        </div>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</h7>
+                    </div>
+                    <div class="rectangle">
+                        <div style="display: flex; align-items: center; margin-top: -10px;">
+                            <img src="images/checkbox-circle-fill.png" style="width: 24px; height: 24px; padding-left: 18px;">
+                            <h6>EASY TO USE</h6>
+                        </div>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</h7>
+                    </div>
+                    <div class="rectangle">
+                        <div style="display: flex; align-items: center; margin-top: -10px;">
+                            <img src="images/checkbox-circle-fill.png" style="width: 24px; height: 24px; padding-left: 18px;">
+                            <h6>BEST USER EXPERIENCE</h6>
+                        </div>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</h7>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="page3" style="color: white;">
+            <div class="rowAbout">
+                <h4>APP FEATURES</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="rowAbout1">
+                <div class="col3" id="col1-page3">
+                    <div class="rectangle3">
+                        <img src="images/browser.png"> 
+                        <h5>UNLIMITER FEATURES</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                    <div class="rectangle3">
+                        <img src="images/vector.png"> 
+                        <h5>AWSOME UI DESIGN</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                </div>
+
+                <div class="col3" id="col2-page3">
+                    <div class="rectangle3" id="rettangolo">
+                        <img src="images/comment.png"> 
+                        <h5>FULL FREE CHAT</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                    <div id="img-page3">
+                        <img src="images/App.png">
+                    </div>
+                    <div class="rectangle3" id="rettangolo1">
+                        <img src="images/male-telemarketer.png"> 
+                        <h5>24/7 SUPPORT BY REAL PEOPLE</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                </div>
+
+                <div class="col3" id="col3-page3">
+                    <div class="rectangle3" id="r3" >
+                        <img src="images/cell-phone.png"> 
+                        <h5>ISO & ANDROID VERSION</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                    <div class="rectangle3" id="r3">
+                        <img src="images/eye-scanner.png"> 
+                        <h5>RETINA READY GREAPHICS</h5>
+                        <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="page4">
+            <div class="rowAbout" id="row-page3">
+                <h4>CHECKOUT OUR APP INTERFACE LOOK</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="rowSlider" style=" overflow: hidden;margin-top: 50px;">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="images/slide1.png">
+                        </div>
+                        <div class="slide active">
+                            <img src="images/slide2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide5.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide1.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide2.png">
+                        </div>
+                    </div>
+                    <button class="PrevNextButton" id="prev" onclick="prevSlide()">
+                        <img src="images/arrow-left-s-line.svg">
+                    </button>
+                    <button class="PrevNextButton" id="next" onclick="nextSlide()">
+                        <img src="images/arrow-left-s-line.svg" style="transform: rotate(180deg);">
+                    </button>
+                </div>
+            </div>
+            <div class="rowSlider" style="padding-top: 40px; justify-content: center; gap: 20px;">
+                <div class="cerchio">
+                    <img src="images/CerchioViola.png"> 
+                </div>
+                <div class="cerchio active">
+                    <img src="images/CerchioViola.png"> 
+                </div>
+                <div class="cerchio">
+                    <img src="images/CerchioViola.png"> 
+                </div>
+                <div class="cerchio">
+                    <img src="images/CerchioViola.png"> 
+                </div>
+                <div class="cerchio">
+                    <img src="images/CerchioViola.png"> 
+                </div>
+            </div>
+
+            <div class="rowSlider" id="dati">
+                <div class="col" id="col1-page4">
+                    <h4>DOWNLOAD APP NOW</h4>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+                    <div style="padding-top: 40px;">
+                        <img src="images/PlayStore.png" id="img1">
+                        <img src="images/AppStore.png" id="img2">
+                    </div>
+                    <div class="rowSlider" id="dati2">
+                        <div class="col4">
+                            <img src="images/download-2-fill.png">
+                            <h5>59865</h5>
+                            <h6>DOWNLOAD</h6>
+                        </div>
+                        <div class="col4">
+                            <img src="images/thumb-up-fill.png">
+                            <h5>29852</h5>
+                            <h6>LIKE</h6>
+                        </div>
+                        <div class="col4">
+                            <img src="images/star-fill.png">
+                            <h5>1500</h5>
+                            <h6>5 STAR RATING</h6>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col" id="col2-page4">
+                    <img src="images/Gravity-Scene-iPhone-12-Mockup 1.png" id="im1">
+                    <img src="images/Ellipse.png" id="ellipse1">
+                </div> 
+            </div>
+        </div>
+
+
+
+        <div class="container" id="page5-1">
+            <div class="rowAbout">
+                <h4 >HOW TO USE THE APP PERFECTLY</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <video width="770px" height="319px" controls>
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="container" id="page5-2" style="color: black;">
+            <div class="rowAbout">
+                <h4 >OUR REATIVE TEAM</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="rowAbout1">
+                <div class="col5">
+                    <img src="images/Profile1.png" id="img">
+                    <h4>CARLA PRESS</h4>
+                    <h6>APP DEVELOPER</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</h7>
+                    <div class="rowSocial">
+                        <a href="#"><img src="images/facebook-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/instagram-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/twitter-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/youtube-fill.png"></a>
+                    </div>
+                </div>
+                <div class="col5">
+                    <img src="images/Profile2.png " id="img">
+                    <h4>CRAIG GOUSE</h4>
+                    <h6>UI/UX DESIGNER</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</h7>
+                    <div class="rowSocial">
+                        <a href="#"><img src="images/facebook-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/instagram-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/twitter-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/youtube-fill.png"></a>
+                    </div>
+                </div>
+                <div class="col5">
+                    <img src="images/Profile3.png" id="img">
+                    <h4>JOCELYN SEPTIMUS</h4>
+                    <h6>WEBSITE DEVELOPER</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</h7>
+                    <div class="rowSocial">
+                        <a href="#"><img src="images/facebook-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/instagram-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/twitter-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/youtube-fill.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="page6">
+            <div class="rowAbout">
+                <h4>OUR HAPPY CUSTOMERS</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="pannel" style="background-color: pink;">
+
+                    </div>
+                    <div class="pannel" style="background-color:aquamarine;">
+    
+                    </div>
+                    <div class="pannel" style="background-color: yellow;">
+    
+                    </div>
+                    <div class="pannel" style="background-color:bisque;">
+    
+                    </div>
+                    <div class="pannel" style="background-color:darkgrey;">
+    
+                    </div>
+                </div>
+                
+            </div>
+            <div class="rowSlider" style="padding-top: 40px; justify-content: center; gap: 20px;">
+                <button class="button active" onclick="NextPrevPannel(0)">
+                    <img src="images/CerchioBianco.png"> 
+                </button>
+                <button class="button" onclick="NextPrevPannel(1)">
+                    <img src="images/CerchioBianco.png"> 
+                </button>
+                <button class="button" onclick="NextPrevPannel(2)">
+                    <img src="images/CerchioBianco.png"> 
+                </button>
+                <button class="button" onclick="NextPrevPannel(3)">
+                    <img src="images/CerchioBianco.png"> 
+                </button>
+                <button class="button" onclick="NextPrevPannel(4)">
+                    <img src="images/CerchioBianco.png"> 
+                </button>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: white; height: 100px;"></div>
+
+        <div class="container" id="page6-copy">
+            <div class="rowAbout" >
+                <h4>OUR HAPPY CUSTOMERS</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="swiper">
+                
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="display: flex; justify-content: center;" >
+                        <img src="https://picsum.photos/930/500?as">
+                    </div>
+                    <div class="swiper-slide" style="display: flex; justify-content: center;">
+                        <img src="https://picsum.photos/930/500?Ds" />
+                    </div>
+                    <div class="swiper-slide" style="display: flex; justify-content: center;">
+                        <img src="https://picsum.photos/930/500?dgg" />
+                    </div>
+                </div>
+
+                <!-- Se hai bisogno di una impaginazione 
+                <div class="swiper-pagination"></div>-->
+              
+                <!-- se vuoi i bottoni per navigare -->
+                <div class="swiper-button-prev" id="button"></div>
+                <div class="swiper-button-next" id="button"></div>
+              
+                <!-- Se vuoi una scrollbar
+                <div class="swiper-scrollbar"></div>-->
+
+              </div>
+        </div>
+
+
+        <div class="container" id="page7">
+            <div class="rowAbout">
+                <h4>OUR RECENT BLOG</h4>
+                <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
+            </div>
+            <div class="rowAbout1">
+                <div class="col7">
+                    <img src="images/Blog1.png">
+                    <h6>THE SNAP PIXEL: HOW IT <br> WORKS AND HOW TO INSTALL</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</h7>
+                    <a href="readMore1.html">READ MORE</a>
+                </div>
+                <div class="col7">
+                    <img src="images/Blog2.png">
+                    <h6>GLOBAL PARTNER SOLUTIONS: A PARTNERSHIP OF INNOVATION</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</h7>
+                    <a href="readMore2.html">READ MORE</a>
+                </div>
+                <div class="col7">
+                    <img src="images/Blog3.png">
+                    <h6>2021: AN OPPORTUNITY FOR SNAPCHATTERS TO START FRESH</h6>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</h7>
+                    <a href="readMore3.html">READ MORE</a>
+                </div>
+            </div>
+            <div id="box">
+                <div class="contatti">
+                    <div class="col" id="col1-page7" >
+                        <div  style="align-items: center; justify-content: center; background: rgba(89, 86, 233, 1); width: 100px; height: 100px; border-radius: 50%; position: relative; display: flex;">
+                            <img src="images/mail-fill.png" style="width: 40px; height: 40px;"> 
+                        </div>
+                        <p>info@youremail.com</p>
+                    </div>
+                    <div class="col" id="col2-page7">
+                        <div  id="tel">
+                            <img src="images/phone-fill.png" style="width: 40px; height: 40px;"> 
+                        </div>
+                        <p>+880 321 655 9985</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="page8">
+            <div class="rowAbout1">
+                <div class="col8">
+                    <h4>LOGO</h4>
+                    <h7>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</h7>
+                    <div class="rowSocial2">
+                        <a href="#"><img src="images/facebook-fill.png" style="padding-left: 0px;"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/instagram-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/twitter-fill.png"></a>
+                        <h1></h1>
+                        <a href="#"><img src="images/youtube-fill.png"></a>
+                    </div>
+                </div>
+                <div class="col8">
+                    <h4 style="font-weight: normal;">QUICK LINK</h4>
+                    <h7><a href="About.html">About</a></h7>
+                    <h7><a href="Features.html">Features</a></h7>
+                    <h7><a href="Schreenshot.html">Screenshot</a></h7>
+                    <h7><a href="Blog.html">Blog</a></h7>
+                </div>
+                <div class="col8">
+                    <h4 style="font-weight: normal;">NEWS LETTER</h4>
+                    <h7>Subscribe our newsletter to get our latest update & news</h7>
+
+                    <div class="form-control">
+                        <input type="text" id="email" name="email" value="Your email address">
+                        <button class="send">
+                            <img src="images/send-plane-2-fill.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div class="row" id="Copyright">
+                <p>&copy; Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
